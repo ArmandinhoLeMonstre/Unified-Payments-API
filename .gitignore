@@ -1,0 +1,14 @@
+.env
+api/app/__pycache__/
+api/app/routers/__pycache__/
+api/app/services/__pycache__/
+api/app/db/__pycache__/
+api/app/models/__pycache__/
+api/app/schemas/__pycache__/
+api/app/db/test.db
+api/app/services/db_services/__pycache__/
+api/app/services/analytics/__pycache__/
+api/app/services/providers/__pycache__/
+api/app/services/security/__pycache__/
+api/app/services/redis/__pycache__/
+api/app/core/__pycache__/

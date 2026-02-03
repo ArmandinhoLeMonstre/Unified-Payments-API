@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+
+</head>
+
+<body data-page="payments">
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>My Dashboard</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="analytics.html">
+              <i class="fa-solid fa-chart-column"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="payments.html">
+              <i class="fa-solid fa-credit-card"></i>
+              <span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <div class="filters">
+        <label for="duration">Starting</label>
+
+        <select id="start" name="start" class="select-provider">
+          <option value="">All</option>
+          <option value="7">7 days</option>
+          <option value="15">15 days</option>
+          <option value="30">30 days</option>
+        </select>
+
+        <button id="apply-btn" class="sync-btn">Apply</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Provider</th>
+            <th>Provider_id</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body">
+
+        </tbody>
+      </table>
+
+      <div class="table-nav">
+        <button id="prev">Prev</button>
+        <span id="page-info"></span>
+        <button id="next">Next</button>
+      </div>
+    </main>
+    
+  </div>
+
+  <script type="module" src="src/main.js" defer></script>
+</body>
+</html>

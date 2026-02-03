@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+</head>
+
+<body data-page="settings">
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>My Dashboard</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="analytics.html">
+              <i class="fa-solid fa-chart-column"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="payments.html">
+              <i class="fa-solid fa-credit-card"></i>
+              <span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      
+      <h1 class="page-title">Settings</h1>
+      
+      <div class="providers-row">
+
+        <div class="provider-box">
+            <img class="provider-logo" src="/stripe.svg" alt="Stripe logo">
+
+          <form id="stripe-form" class="">
+            <input 
+              type="password" 
+              id="stripe-api-key" 
+              placeholder="Enter your stripe API key" 
+              required
+            >
+
+            <button type="submit">Save API key</button>
+          </form>
+
+          <p id="stripe-status-message" class="provider-status-message"></p>
+            
+        </div>
+
+        <div class="provider-box">
+          <img class="provider-logo" src="/mollie.svg" alt="Mollie logo">
+
+          <form id="mollie-form" class="">
+            <input 
+              id="mollie-api-key" 
+              type="password" 
+              placeholder="Enter your Mollie API key"
+              required>
+              
+            <button type="submit">Save API key</button>
+          </form>
+
+          <p id="mollie-status-message" class="provider-status-message"></p>
+  
+          </div>
+      </div>
+    </main>
+    
+  </div>
+
+  <script type="module" src="src/main.js" defer></script>
+</body>
+</html>

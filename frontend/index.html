@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+</head>
+
+<body data-page="overview">
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>My Dashboard</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="analytics.html">
+              <i class="fa-solid fa-chart-column"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="payments.html">
+              <i class="fa-solid fa-credit-card"></i>
+              <span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <h3>Revenues</h3>
+          <p id="revenues">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Transactions succeeded</h3>
+          <p id="transactions-succeeded">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Last Synchronisation</h3>
+          <p id="last_sync">0</p>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <h3>Daily Earnings</h3>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+
+    </main>
+    
+  </div>
+
+  <script type="module" src="src/main.js" defer></script>
+</body>
+</html>

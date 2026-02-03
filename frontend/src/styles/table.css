@@ -1,0 +1,78 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+thead {
+  background-color: #f5f7fa;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  font-weight: 600;
+  color: #555;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.status-succeeded {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-failed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-requires_action {
+  background-color: #ffe0b2;
+  color: #8a4b08;
+}
+
+.provider-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  background: #f1f3f5;
+  color: #2c3e50; 
+}
+
+.provider-stripe {
+  background: rgba(99, 91, 255, 0.12);
+  color: #3f3abf;
+}
+
+.provider-mollie {
+  background: rgba(235, 93, 42, 0.12);
+  color: #a8441e;
+}

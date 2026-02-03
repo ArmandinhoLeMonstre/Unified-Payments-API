@@ -1,0 +1,46 @@
+.sidebar {
+    width: 200px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin: 0 0 1em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 0.5em 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    border-radius: 8px;
+
+    transition: background 150ms ease;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.sidebar a i {
+    width: 18px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+}

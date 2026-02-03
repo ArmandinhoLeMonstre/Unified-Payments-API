@@ -1,0 +1,65 @@
+.providers-row {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.provider-box {
+    flex: 1;
+    max-width: 400px;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.provider-box:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* 👈 stronger shadow */
+    transform: translateY(-2px);             /* 👈 tiny lift */
+}
+
+.provider-logo{
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.provider-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.provider-box form.hidden {
+  display: none;
+}
+
+.provider-box input {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.provider-box button {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.provider-status-message {
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.provider-status-message.success {
+  background-color: #dcfce7;
+  color: #16a34a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.provider-status-message.error {
+    color:#dc2626;
+}

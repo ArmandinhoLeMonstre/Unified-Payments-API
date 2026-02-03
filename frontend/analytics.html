@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+</head>
+
+<body data-page="analytics">
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <h2>My Dashboard</h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="analytics.html">
+              <i class="fa-solid fa-chart-column"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="payments.html">
+              <i class="fa-solid fa-credit-card"></i>
+              <span>Payments</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa-solid fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <div class="filters">
+        <label for="provider">Choose a provider:</label><br>
+  
+        <select id="provider" name="provider" class="select-provider">
+          <option value="">Select a provider</option>
+          <option value="all">All</option>
+          <option value="stripe">Stripe</option>
+          <option value="mollie">Mollie</option>
+        </select>
+       
+        <select id="start" name="start" class="select-provider">
+          <option value="">All</option>
+          <option value="7">7 days</option>
+          <option value="15">15 days</option>
+          <option value="30">30 days</option>
+        </select>
+
+        <button id="apply-btn" class="sync-btn">Apply</button>
+      </div>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <h3>Revenues</h3>
+          <p id="revenues">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Succeeded</h3>
+          <p id="transactions-succeeded">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Failed</h3>
+          <p id="transactions-failed">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Pending</h3>
+          <p id="transactions-pending">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Requires action</h3>
+          <p id="transactions-requires-action">0</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Last Synchronisation</h3>
+          <p id="last_sync">0</p>
+        </div>
+
+      </div>
+
+      <div class="chart-container">
+        <div class="chart-box">
+          <canvas id="chart-revenues"></canvas>
+        </div>
+        <div class="chart-box">
+          <canvas id="chart-transactions"></canvas>
+        </div>
+      </div>
+
+      <button id="sync-btn" class="sync-btn" disabled>
+        <i class="fa-solid fa-rotate"></i>
+        Sync
+      </button>
+
+      <p id="sync-message" class="sync-message hidden"></p>
+
+    </main>
+    
+  </div>
+
+  <script type="module" src="src/main.js" defer></script>
+</body>
+</html>
